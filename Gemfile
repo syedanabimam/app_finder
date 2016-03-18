@@ -13,6 +13,11 @@ group :development, :test do
   gem "sqlite3", "~> 1.3.7", :require => "sqlite3"
 end
 
+#Use Postgresql as the database for the production
+group :production do
+   gem 'pg' 
+   gem 'rails_12factor'
+end 
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.3'
