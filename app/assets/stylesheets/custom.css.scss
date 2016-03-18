@@ -1,0 +1,49 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Application main html page i.e. html.erb CSS styling
+body {
+  background-color: #fafafa;
+  background-image: url(/assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+body.custom-background{
+   background-size: 100%;
+}
+
+.navbar-brand {
+  a {
+    color: #125688;
+    text-decoration: none;
+  }
+}
+
+.navbar-default {
+  background-color: #F7F7F7;
+  height: 54px;
+  .navbar-nav li a {
+    color: #125688;
+  }
+}
+
+.navbar-container {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.well {
+  background-color: rgba(245, 245, 245, 0.4);
+}
+
+.top-header-style {
+  color: #7f0000;
+}
+
+.top-para-style {
+  color: #ff4d4d;
+}

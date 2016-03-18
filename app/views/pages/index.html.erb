@@ -1,7 +1,15 @@
-<h1>Search Form:</h1>
+<div class ="row">
+  <div class="col-md-6 col-md-offset-3">
+      <h1 class="text-center">Search an app</h1>
+      <p class="text-center"><strong>Enter the appropriate App Itune ID!</strong></p>
+      <div class="well text-center">
+          <%= form_tag("/search", controller: "pages", action: "search", method: "get") do %>
+            <%= label_tag(:search_id, "Search for:") %>
+            <%= number_field_tag(:search_id) %>
+            <%= submit_tag("Search") %>
+          <% end %>
+      </div>
+  </div>
+</div>
 
-<%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
-<% end %>
+

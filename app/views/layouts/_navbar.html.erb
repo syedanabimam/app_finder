@@ -1,0 +1,24 @@
+    <nav class="navbar navbar-default">
+      <div class="navbar-container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target="#bs-navbar-collapse-1" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <%= link_to root_path, :class => 'navbar-brand img-responsive' do %>
+          ItunesFinder
+        <% end %>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <%= link_to "Login", "#" %>
+                </li>
+                <li>
+                  <%= link_to "Register", "#" %>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
